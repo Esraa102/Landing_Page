@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hero {
+    @apply h-screen relative overflow-hidden z-0 bg-white dark:bg-black;
+  }
+  .hero-container {
+    @apply container mx-auto p-4 flex items-center justify-between;
+  }
+  .circle {
+    @apply absolute w-full -z-[1]  h-[200%] bg-mainColor rounded-full left-1/2 top-[30%];
+  }
+  .main-content {
+    @apply container mx-auto  px-4 flex items-center gap-8 justify-between flex-col lg:flex-row;
+  }
+  .heading {
+    @apply text-3xl lg:text-4xl font-bold mb-4 text-black dark:text-white;
+  }
+  .themeBtn {
+    @apply text-xl cursor-pointer text-black dark:text-mainColor;
+  }
+  .btn {
+    @apply px-4 py-1 bg-mainColor   rounded-full hover:scale-110 ease-in-out duration-300;
+  }
+}
+
+.floating {
+  -webkit-animation: float linear 2s infinite alternate;
+  animation: float linear 2s infinite alternate;
+}
+@-webkit-keyframes float {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -20px;
+  }
+}
+@-webkit-keyframes float {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -20px;
+  }
+}
+@keyframes float {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -20px;
+  }
+}

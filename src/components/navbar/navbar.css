@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .largeNav {
+    @apply hidden lg:flex gap-6 items-center;
+  }
+  .mobileNav {
+    @apply absolute backdrop-blur-md p-4 top-[60px] left-1/2 -translate-x-1/2 w-[80%] flex gap-6 items-center flex-col;
+  }
+  .link {
+    @apply font-semibold hover:text-mainColor transition duration-300   dark:text-white;
+  }
+}
